@@ -1,0 +1,8 @@
+<h1>Stores</h1>
+
+<br>
+<% @stores.each do |store| %>
+  <%= link_to "#{store.title}", show_stores_path(store)%>
+  <%= store.full_address %>
+  <br><hr>
+<% end %>
